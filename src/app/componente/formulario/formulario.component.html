@@ -1,0 +1,25 @@
+<section>
+  <fieldset>
+    <label>Ingrese rut del Alumno</label>
+    <input type="number" [value]="alumno.rut" (input)="cRut($event)">
+  </fieldset>
+  <fieldset>
+    <label>Ingrese el nombre del Alumno</label>
+    <input type="text" [value]="alumno.nombre" (input)="cNombre($event)">
+  </fieldset>
+  <fieldset>
+    <label>Ingrese el apellido del Alumno</label>
+    <input type="text" [value]="alumno.apellido" (input)="cApellido($event)">
+  </fieldset>
+  <fieldset>
+    <label>Ingrese la edad del Alumno</label>
+    <input type="number" [value]="alumno.edad" (input)="cEdad($event)">
+  </fieldset>
+  <fieldset>
+    <label>Ingrese la sección del Alumno</label>
+    <input type="number" [value]="alumno.seccion" (input)="cSeccion($event)">
+  </fieldset>
+  <fieldset>
+    <button type="button" (click)="guardarElemento()">Registrar</button>
+  </fieldset>
+</section>
